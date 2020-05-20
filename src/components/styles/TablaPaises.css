@@ -29,10 +29,6 @@ td .alphaCode-active {
   color: white;
 }
 
-td:nth-child(1):hover {
-  background-color: #0069d9;
-}
-
 .table-tr:hover {
   background-color: #0069d9;
 }
