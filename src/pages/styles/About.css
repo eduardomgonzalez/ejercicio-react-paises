@@ -1,0 +1,27 @@
+.about {
+  background-color: #00d7fe;
+}
+
+.about__container {
+  padding: 100px 0 368px 100px;
+  margin-right: 0;
+}
+
+.about__container p {
+  font-size: 20px;
+}
+
+.about__container .about__container-image img {
+  width: 100%;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    padding: 50px 20px 30px 20px;
+  }
+
+  .about__container .about__container-image img {
+    min-width: 80px;
+  }
+}

@@ -1,0 +1,23 @@
+.home {
+  background-image: url(../../images/react03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  padding-bottom: 168px;
+}
+
+.home__container {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.home__container h3 {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.home__container span {
+  color: rgb(3, 24, 145);
+  font-weight: bold;
+}

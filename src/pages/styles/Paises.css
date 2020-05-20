@@ -1,0 +1,7 @@
+.paises {
+    background-color: #00CDF0;
+}
+
+.paises .paises__table {
+    padding-bottom: 100px;
+}

@@ -1,0 +1,10 @@
+.filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
