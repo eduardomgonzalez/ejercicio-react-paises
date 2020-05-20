@@ -5,7 +5,7 @@ import ImagenAbout from "../images/logo.png";
 class About extends Component {
   render() {
     return (
-      <div className="about">
+      <section className="about">
         <div className="row about__container justify-content-around">
           <div className="col-md-12 col-lg-5 about__container-details">
             <h1>Hola! Soy Eduardo González</h1>
@@ -22,7 +22,7 @@ class About extends Component {
             <img src={ImagenAbout} alt="" />
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

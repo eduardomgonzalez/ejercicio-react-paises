@@ -45,12 +45,14 @@ class Paises extends Component {
     const { paises, valorFiltrado, categoria } = this.state;
 
     return (
-      <div className="paises">
-        <FiltroContainer
-          listaPaises={paises}
-          onChange={this.handleChange}
-          onClick={this.handleClick}
-        />
+      <section className="paises">
+        <div className="">
+          <FiltroContainer
+            listaPaises={paises}
+            onChange={this.handleChange}
+            onClick={this.handleClick}
+          />
+        </div>
 
         <section className="paises__table">
           <TablaPaises
@@ -60,7 +62,7 @@ class Paises extends Component {
             onClick={this.handleClickPaises}
           />
         </section>
-      </div>
+      </section>
     );
   }
 }

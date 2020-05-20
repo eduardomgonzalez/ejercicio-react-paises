@@ -1,10 +1,11 @@
 .about {
-  background-color: #00d7fe;
+  background-color: #272B34;
 }
 
 .about__container {
   padding: 100px 0 368px 100px;
   margin-right: 0;
+  color: white;
 }
 
 .about__container p {

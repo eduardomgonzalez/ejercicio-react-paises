@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./styles/Pais.css";
+import { Link } from "react-router-dom";
 
 class Pais extends Component {
   state = {
@@ -11,7 +12,6 @@ class Pais extends Component {
   }
 
   apiPaises = async () => {
-    console.log(this.props.match.params.alphaCode);
     try {
       const datos = await fetch(
         `https://restcountries.eu/rest/v2/alpha/${this.props.match.params.alphaCode}`,
@@ -52,8 +52,8 @@ class Pais extends Component {
     );
 
     return (
-      <div className="tablaContainer">
-        <table className="tablaPais">
+      <div className="tableContainer">
+        <table className="table table-dark">
           <thead>
             <tr>
               <th>Codigo</th>
@@ -64,12 +64,18 @@ class Pais extends Component {
               <th>area</th>
               <th>Dominio de primer Nivel</th>
               <th>Codigo de llamadas</th>
-              <th>bordes</th>
+              <th>Bordes</th>
               <th>Moneda</th>
             </tr>
           </thead>
           <tbody>{valores}</tbody>
         </table>
+
+        <div className="btn-back">
+          <Link to="/paises" className="btn btn-primary">
+            Regresar
+          </Link>
+        </div>
       </div>
     );
   }

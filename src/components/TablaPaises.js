@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./styles/TablaPaises.css";
+import { Link } from "react-router-dom";
 
 class TablaPaises extends Component {
   render() {
@@ -15,9 +16,23 @@ class TablaPaises extends Component {
         })
         .map((pais) => {
           return (
-            <tr key={pais.alpha3Code}>
-              <td>{pais.alpha3Code}</td>
-              <td>{pais.name}</td>
+            <tr key={pais.alpha3Code} className="table-tr">
+              <td>
+                <Link
+                  to={`/paises/${pais.alpha3Code}`}
+                  className="alphaCode-active"
+                >
+                  {pais.alpha3Code}
+                </Link>
+              </td>
+              <td>
+                <Link
+                  to={`/paises/${pais.alpha3Code}`}
+                  className="alphaCode-active"
+                >
+                  {pais.name}
+                </Link>
+              </td>
               <td>{pais.capital}</td>
               <td>{pais.region}</td>
               <td>{pais.subregion}</td>
@@ -31,9 +46,23 @@ class TablaPaises extends Component {
     } else {
       datosPaises = listaPaises.map((pais) => {
         return (
-          <tr key={pais.alpha3Code}>
-            <td>{pais.alpha3Code}</td>
-            <td>{pais.name}</td>
+          <tr key={pais.alpha3Code} className="table-tr">
+            <td>
+              <Link
+                to={`/paises/${pais.alpha3Code}`}
+                className="alphaCode-active"
+              >
+                {pais.alpha3Code}
+              </Link>
+            </td>
+            <td>
+              <Link
+                to={`/paises/${pais.alpha3Code}`}
+                className="alphaCode-active"
+              >
+                {pais.name}
+              </Link>
+            </td>
             <td>{pais.capital}</td>
             <td>{pais.region}</td>
             <td>{pais.subregion}</td>
@@ -46,19 +75,21 @@ class TablaPaises extends Component {
     }
 
     return (
-      <table>
-        <thead>
-          <tr>
-            <th>Codigo</th>
-            <th>Pais</th>
-            <th>Capital</th>
-            <th>Region</th>
-            <th>Sub Region</th>
-            <th>Bandera</th>
-          </tr>
-        </thead>
-        <tbody>{datosPaises}</tbody>
-      </table>
+      <div className="tableContainer">
+        <table className="table table-dark">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Pais</th>
+              <th>Capital</th>
+              <th>Region</th>
+              <th>Sub Region</th>
+              <th>Bandera</th>
+            </tr>
+          </thead>
+          <tbody>{datosPaises}</tbody>
+        </table>
+      </div>
     );
   }
 }

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <div className="nav">
+      <nav className="nav">
         <div className="nav__img">
           <img src={Logo} alt="" />
         </div>
@@ -17,17 +17,23 @@ class Navbar extends Component {
         <nav>
           <ul>
             <li>
-              <Link className="nav-links" to="/">Home</Link>
+              <Link className="nav-links" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link className="nav-links" to="/about">Acerca de mi</Link>
+              <Link className="nav-links" to="/about">
+                Acerca de mi
+              </Link>
             </li>
             <li>
-              <Link className="nav-links" to="/paises">Paises</Link>
+              <Link className="nav-links" to="/paises">
+                Paises
+              </Link>
             </li>
           </ul>
         </nav>
-      </div>
+      </nav>
     );
   }
 }

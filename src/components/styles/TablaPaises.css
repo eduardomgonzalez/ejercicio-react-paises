@@ -1,22 +1,22 @@
+.tableContainer {
+  background-color: #272b34;
+  padding: 100px 100px 50px 100px;
+  text-align: center;
+}
+
 table {
   border: 1px solid black;
-  border-collapse: collapse;
-  margin: 20px auto 0 auto;
+  margin: 0px auto 0 auto;
+  overflow: hidden;
 }
 
-caption {
-  background-color: rgb(45, 53, 156);
-  padding: 20px;
-  color: white;
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-td,
 th {
+  background-color: #28a745;
+}
+
+th,
+td {
   border: 1px solid black;
-  padding: 5px;
-  text-align: left;
 }
 
 tr:nth-child(even) {
@@ -24,6 +24,15 @@ tr:nth-child(even) {
   color: white;
 }
 
-tr:nth-child(odd) {
-  background-color: rgb(229, 236, 238);
+td .alphaCode-active {
+  text-decoration: none;
+  color: white;
+}
+
+td:nth-child(1):hover {
+  background-color: #0069d9;
+}
+
+.table-tr:hover {
+  background-color: #0069d9;
 }

@@ -9,14 +9,9 @@ class FiltroContainer extends React.Component {
 
     return (
       <section className="filtros">
-        <button className="btn btn-success" onClick={onClick}>
+        <button className="btn btn-primary" onClick={onClick}>
           Mostrar todos
         </button>
-        {/* <Filtro
-          listaPaises={listaPaises}
-          categoria={"alpha3Code"}
-          onChange={onChange}
-        /> */}
         <Filtro
           listaPaises={listaPaises}
           categoria={"region"}
